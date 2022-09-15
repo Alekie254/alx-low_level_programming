@@ -1,12 +1,14 @@
 #include "main.h"
 /**
-* main - check the code for Holberton School students.
+* mul - returns the product of 2 ints
+* @a: an int given by the main function
+* @b: an int given by the main function
 *
-* Return: Always 0.
+* Description: Uses headers to link and a nested loops to achieve goal
+* Return: see first line
 */
-int main(void)
+
+int mul(int a, int b)
 {
-printf("%d\n", mul(98, 1024));
-printf("%d\n", mul(-402, 4096));
-return (0);
+	return (a * b);
 }
