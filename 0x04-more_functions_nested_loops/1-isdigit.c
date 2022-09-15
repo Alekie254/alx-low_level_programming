@@ -1,13 +1,16 @@
 #include "main.h"
 #include <stdio.h>
 /**
-* main - check the code for Holberton School students.
+* _isdigit - returns 1 if digit, 0 if not
+* @c: an int given by the main function
 *
-* Return: Always 0.
+* Description: Uses headers to link and a nested loops to achieve goal
+* Return: see first line
 */
-int main(void)
+
+int _isdigit(int c)
 {
-printf("%d\n", mul(98, 1024));
-printf("%d\n", mul(-402, 4096));
-return (0);
+	if (c >= 48 && c <= 57)
+		return (1);
+	return (0);
 }
