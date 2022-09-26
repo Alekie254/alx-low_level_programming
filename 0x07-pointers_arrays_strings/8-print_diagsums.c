@@ -18,4 +18,3 @@ for (s = 1; s < size + 1; s++)
 diagonal2 = diagonal2 + a[(size - 1) * s];
 printf("%d, %d\n", diagonal1, diagonal2);
 }
-  
