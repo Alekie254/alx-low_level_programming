@@ -7,11 +7,11 @@
  */
 typedef struct dog
 {
-  char *name;
-  float age;
-  char *owner;
+char *name;
+float age;
+char *owner;
 }
-  dog;
+dog;
 /*task three, new type dog_t as new name of strcut dog */
 typedef struct dog dog_t;
 int _putchar(char c);
