@@ -6,6 +6,7 @@
  * @action: pointer to a function that receives an int
  * Return: void
  */
+void array_iterator(int *array, size_t size, void (*action)(int))
 {
 /* unsigned int because an error told me */
 /* so elements in the array unsigned integers */
