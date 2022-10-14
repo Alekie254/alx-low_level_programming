@@ -10,10 +10,10 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-  /* dog_t is the new name of dog */
-  /* two variables to know the size of the variables I need to copy */
+/* dog_t is the new name of dog */
+/* two variables to know the size of the variables I need to copy */
 int namerunner, ownerrunner;
-  /* allocate the *new_dog function and test if is null or not */
+/* allocate the *new_dog function and test if is null or not */
 dog_t *new_dog = malloc(sizeof(dog_t));
 if (new_dog == NULL)
 return (new_dog);
