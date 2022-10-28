@@ -6,15 +6,16 @@
  */
 int sum_listint(listint_t *head)
 {
-  int sum = 0;
-  while (head)
-    {
-      /* find the sum of nodes */
-      sumofnodes(head, &sum);
-      /* required sum */
-      return (sum);
-    }
-  return(0);
+	int sum = 0;
+
+	while (head)
+	{
+		/* find the sum of nodes */
+		sumofnodes(head, &sum);
+		/* required sum */
+		return (sum);
+	}
+	return (0);
 }
 /**
  * sumofnodes - find the sum of ndoes
@@ -26,13 +27,15 @@ int sum_listint(listint_t *head)
  */
 void sumofnodes(listint_t *head, int *sum)
 {
-int n;
-/* if head is equal to NULL */
-if (!head)
-return;
-/* so I can make the sum */
-n = head->n;
-sumofnodes(head->next, sum);
-/* accumulate sum */
-*sum = *sum + n;
+	int n;
+	/* if head is equal to NULL */
+	if (!head)
+		return;
+	/* de reference to n to the data */
+	/* so I can make the sum */
+	n = head->n;
+	/* recursively traverse the remaining nodes  */
+	sumofnodes(head->next, sum);
+	/* accumulate sum */
+	*sum = *sum + n;
 }
