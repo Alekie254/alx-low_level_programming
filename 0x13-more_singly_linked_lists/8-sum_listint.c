@@ -6,11 +6,11 @@
  */
 int sum_listint(listint_t *head)
 {
-  int sum = 0;
-  while (head)
-    {
-      /* find the sum of nodes */
-      sumofnodes(head, &sum);
+int sum = 0;
+while (head)
+{
+/* find the sum of nodes */
+sumofnodes(head, &sum);
       /* required sum */
       return (sum);
     }
